@@ -1,0 +1,5 @@
+# Unexpected Behavior with CSS `calc()` Function
+This repository demonstrates a common, yet subtle, error when using the CSS `calc()` function. The issue arises from a misunderstanding of operator precedence and unit handling within the `calc()` expression.  The example showcases an incorrect usage of `calc()` that results in unexpected layout. The solution provides the correct implementation and clarifies the best practices for using `calc()` to avoid similar issues.  This is particularly relevant for responsive design where dynamic sizing is essential.
+
+## Bug Description:
+The original CSS code attempts to calculate a width using `calc()`, but it produces unexpected results due to an incorrect combination of percentage and pixel values.  This is caused by a misunderstanding of how the `calc()` function works and can lead to frustrating debugging sessions.
