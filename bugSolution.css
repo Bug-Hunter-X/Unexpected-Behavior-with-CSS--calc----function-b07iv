@@ -1,0 +1,24 @@
+/* Corrected CSS using calc() */
+#container {
+  width: calc(100% - 20px); /* Subtract 20px from 100% before other calculations */
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Alternatively, use variables for better readability and maintainability. */
+:root {
+  --container-padding: 10px;
+  --container-border: 1px;
+}
+
+#container {
+  width: calc(100% - 2 * var(--container-padding) - 2 * var(--container-border));
+  padding: var(--container-padding);
+  border: var(--container-border) solid #ccc;
+}
+
+/* Explanation:
+   - Use clear spacing around operators. 
+   - Ensure proper unit handling and conversion if needed.
+   - Use variables for better readability and maintainability.
+   -  Avoid complex nested `calc()` expressions where possible.   */
